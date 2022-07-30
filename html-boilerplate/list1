@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LIST</title>
+    </head>
+
+    <body>
+        <h1>My Shopping List</h1>
+        <ul>
+            <li>Melk</li>
+            <li>Botter</li>
+            <li>Suiker</li>
+            <li>Meel</li>
+            <li>Eiers</li>
+        </ul>
+
+        <h1>My Todo List</h1>
+        <ol type="i">
+            <li>Eet</li>
+            <li>Oefen</li>
+            <li>Stort</li>
+            <li>Slaap</li>
+        </ol>
+
+        <h1>Places to Visit</h1>
+        <ul>
+            <li>Kyoto</li>
+            <li>Berlyn</li>
+            <li>San Francisco</li>
+        </ul>
+
+        <h1>Favourite Videogames</h1>
+        <ol>
+            <li>Skyrim</li>
+            <li>Witcher 3</li>
+            <li>BFME 2</li>
+            <li>Assassins Creed 2</li>
+            <li>Rugby 06</li>
+        </ol>
+    </body>
+
+</html>
