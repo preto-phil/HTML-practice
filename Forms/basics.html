@@ -9,32 +9,50 @@
 </head>
 <body>
     <form action="https://httpbin.org/post" method="post">
-        <div>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" placeholder="John..." name="first_name">
-        </div>
-        <div>
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last_name" placeholder="Doe..." name="last_name">
-        </div>
-        <div>
-            <label for="id_number">ID Number:</label>
-            <input type="number" id="id_number" placeholder="991122..." name="id_number">
-        </div>
-        <div>
-            <label for="dob">Date of birth:</label>
-            <input type="date" name="dob" id="dob">
-        </div>
-        <div>
-            <label for="user_email">Email:</label>
-            <input type="email" name="user_email" id="user_email" placeholder="johndoe@email.com">
-        </div>
-        <div>
-            <label for="user_password">Password:</label>
-            <input type="password" name="user_password" id="user_password">
-        </div>
+        <fieldset>
+            <legend>User Name</legend>
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" placeholder="John..." name="first_name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last_name" placeholder="Doe..." name="last_name">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>User Biographical Information</legend>
+            <div>
+                <label for="id_number">ID Number:</label>
+                <input type="number" id="id_number" placeholder="991122..." name="id_number">
+                <label for="dob">Date of birth:</label>
+                <input type="date" name="dob" id="dob">
+                <label for="pob">Place of birth:</label>
+                <input type="text" name="pob" id="pob">
+            </div>
+        </fieldset>
+        <legend>User Input</legend>
+        <fieldset>
+            <div>
+                <label for="user_email">Email:</label>
+                <input type="email" name="user_email" id="user_email" placeholder="johndoe@email.com">
+                <label for="user_phone">Phone Number:</label>
+                <input type="number" name="user_phone" id="user_phone">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Password</legend>
+            <div>
+                <label for="user_password">Password:</label>
+                <input type="password" name="user_password" id="user_password">
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
     </form>
-    <button type="submit">Submit</button>
+    
 
     <!-- Using input outside of form -->
 
@@ -97,25 +115,54 @@
 
     <!-- checkboxes -->
 
-      <h1>Pizza Toppings</h1>
-      <div>
-        <input type="checkbox" name="toppings" id="sausage" value="sausage" checked>
-        <label for="sausage">Sausage</label>
-      </div>
-      <div>
-        <input type="checkbox" name="toppings" id="onions" value="onions" checked>
-        <label for="onions">Onions</label>
-      </div>
-      <div>
-        <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
-        <label for="pepperoni">Pepperoni</label>
-      </div>
-      <div>
-        <input type="checkbox" name="toppings" id="mushrooms" value="mushrooms" checked>
-        <label for="mushrooms">Mushrooms</label>
-      </div>
+      <form action="https://httpbin.org/post" method="post">
+          <h1>Pizza Toppings</h1>
+          <div>
+            <input type="checkbox" name="toppings" id="sausage" value="sausage" checked>
+            <label for="sausage">Sausage</label>
+          </div>
+          <div>
+            <input type="checkbox" name="toppings" id="onions" value="onions" checked>
+            <label for="onions">Onions</label>
+          </div>
+          <div>
+            <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+          </div>
+          <div>
+            <input type="checkbox" name="toppings" id="mushrooms" value="mushrooms" checked>
+            <label for="mushrooms">Mushrooms</label>
+          </div>
+          <!-- Submit button -->
+          <button type="submit">Submit</button>
+          <!-- Reset button -->
+          <button type="reset">Reset</button>
+      </form>
 
-      <!-- Reset button -->
+      <!-- Generic Button -->
+      <button type="button" style="margin: 10px 0px;">Click Me I Do Nothing</button>
+
+      <!-- Fieldset with radio buttons -->
+
+      <fieldset>
+        <legend>What would you like to drink?</legend>
+      
+        <div>
+          <input type="radio" name="drink" id="coffee" value="coffee">
+          <label for="coffee">Coffee</label>
+        </div>
+      
+        <div>
+          <input type="radio" name="drink" id="tea" value="tea">
+          <label for="tea">Tea</label>
+        </div>
+      
+        <div>
+          <input type="radio" name="drink" id="soda" value="soda">
+          <label for="soda">Soda</label>
+        </div>
+      
+      </fieldset>
 
 </body>
 </html>
