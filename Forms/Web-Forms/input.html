@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Input Types</title>
+</head>
+<body style="line-height: 2.5;">
+    <form>
+        <ul>
+            <li>
+                <label for="search_bar">Search:</label>
+                <input type="search" id="search_bar" name="search">
+            </li>
+            <li>
+                <label for="tel_number">Tel Number:</label>
+                <input type="tel" id="tel_number" name="tel_number">
+            </li>
+            <li>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url">
+            </li>
+            <li>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100" step="1">
+            </li>
+            <li>
+                <label for="slider">Price:</label>
+                <input 
+                type="range" 
+                id="slider" 
+                name="slider"
+                min="0"
+                max="10000"
+                step="100"
+                value="5000">
+                <output class="price-output" for="slider"></output>
+            </li>
+            <li>
+                <label for="datetime">Date:</label>
+                <input type="datetime-local" id="datetime" name="datetime">
+            </li>
+            <li>
+                <label for="month">Month:</label>
+                <input type="month" id="month" name="month">
+            </li>
+            <li>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+            </li>
+            <li>
+                <label for="week">Week:</label>
+                <input type="week" id="week" name="week">
+            </li>
+            <li>
+                <label for="date">What time are you available this summer?</label>
+                <input 
+                type="date" 
+                id="date" 
+                name="date" 
+                min="2013-06-01"
+                max="2013-08-31"
+                step="7">
+            </li>
+            <li>
+                <label for="color">Color picker:</label>
+                <input type="color" id="color" name="color">
+            </li>
+        </ul>
+    </form>
+
+    <script src="./input.js"></script>
+</body>
+</html>
