@@ -8,5 +8,5 @@ input:valid {
 }
 
 input:invalid:required {
-    background-image: linear-gradient(to right, pink, cyan);
+    background-image: linear-gradient(to right, rgba(241, 26, 62, 0.4), rgba(255, 94, 19, 0.4));
 }
